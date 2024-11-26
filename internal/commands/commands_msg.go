@@ -1,7 +1,7 @@
 package commands
 
 const (
-	missingPropMsg           = `the "commands" property is missing in the "custom" builder`
+	missingPropMsg           = `Warning! the "commands" property is missing in the "custom" builder`
 	wrongPropMsg             = `the "commands" property is defined incorrectly; the property must contain a sequence of strings`
 	parseModuleCfgFailedMsg  = `could not parse the module types configuration`
 	parseBuilderCfgFailedMsg = `could not parse the builder types configuration`
