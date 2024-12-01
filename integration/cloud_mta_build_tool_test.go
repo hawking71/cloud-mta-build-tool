@@ -815,7 +815,7 @@ func resourceCleanup(appName string) {
 func executeEverySecond(bin string, args string, path string) (string, errorOut string, err error) {
 	n := 0
 	cmdOut, errOut, err := execute(bin, args, path)
-	for range time.Tick(3 * time.Second) {
+	for range time.Tick(time.Second) {
 		if n == 40 || strings.Compare(cmdOut, "'200'") == 0 {
 			break
 		}
