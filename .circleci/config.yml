@@ -171,10 +171,10 @@ jobs:
 
   test:
     docker:
-      - image: qinghaoliang553/mbt_int_test
+      - image: shimit/mbt_multi:0.3.0
     working_directory: ~/go/src/github.com/SAP/cloud-mta-build-tool
     steps:
-      - checkout
+      #- checkout
       - run:
           name: install dependencies
           command: |
